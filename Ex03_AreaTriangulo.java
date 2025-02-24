@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class Ex03_AreaTriangulo {
     public static void main (String [] args){
     
-        //dclara
+        //declara
         double base, altura, area ; 
         
         //solicita entrada de dados
