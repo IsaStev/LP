@@ -20,11 +20,15 @@ public class Ex21_NotasAluno {
         if (media >= 6.0){
            JOptionPane.showMessageDialog(null, ("APROVADO!"));
         }
-        else if (media >= 3.0 && media < 6.0){
+        else {
+            if (media >= 3.0 && media < 6.0){
                 JOptionPane.showMessageDialog(null, ("EXAME!"));
-        }
-            else if (media < 3) {
-                    JOptionPane.showMessageDialog(null, ("RETIDO!"));
             }
+            else {
+                if (media < 3) {
+                    JOptionPane.showMessageDialog(null, ("RETIDO!"));
+                }
+            }
+        }
     }
 }
