@@ -15,12 +15,16 @@ public class Ex19_MaiorValor {
             maior = v1;
             JOptionPane.showMessageDialog(null, "O valor maior é: " + maior);           
         }
-        else if (v1 < v2) {
+        else {
+            if (v1 < v2) {
                 maior = v2;
                 JOptionPane.showMessageDialog(null, "O valor maior é: " + maior);
-        }
-            else if (v1 == v2) {
-                    JOptionPane.showMessageDialog(null, "Os valores são iguais");      
             }
+            else {
+                if (v1 == v2) {
+                    JOptionPane.showMessageDialog(null, "Os valores são iguais");      
+                }
+            }
+        }
     }
 }
