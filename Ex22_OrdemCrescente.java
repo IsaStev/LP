@@ -19,14 +19,16 @@ public class Ex22_OrdemCrescente{
             JOptionPane.showMessageDialog(null, ("Os números em ordem crescente: " + maior + " , " + menor));
 
         }
-        else if (v2 > v1 ) {
+        else {
+            if (v2 > v1 ) {
                 maior = v2;
                 menor = v1;
 
                 JOptionPane.showMessageDialog(null, ("Os valores em ordem crescente: " + maior + " , " + menor));
-        }
+            }
             else {
                 JOptionPane.showMessageDialog(null, ("Os números são iguais!"));
             }
+        }
     }
 }
