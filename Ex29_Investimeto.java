@@ -22,9 +22,11 @@ public class Ex29_Investimeto {
             corrigido = aplicado + (aplicado * 0.03);
             JOptionPane.showMessageDialog(null, ("O valor do investimeno após um mês será de: " + corrigido));
         }
-            else if (tipo == 2){
+        else {
+            if (tipo == 2){
                 corrigido = aplicado + (aplicado * 0.05);
                 JOptionPane.showMessageDialog(null, ("O valor do investimento após um mês será de: " + corrigido));
             }
+        }
     }
 }
