@@ -30,13 +30,15 @@ public class Ex20_Baskara {
                 JOptionPane.showMessageDialog(null, "A equação possui duas raizes. \n x1 = " + x1 + "\n x2 = " + x2);
             
             }
-            else if (delta == 0) {
-                x1 = -b / (2*a);
-                JOptionPane.showInputDialog(null, "A equação possui uma raiz única: \n x= " + x1);
-            
-            }
             else {
-                JOptionPane.showInputDialog(null, "A euqação não possui raizes reais.");
+                if (delta == 0) {
+                    x1 = -b / (2*a);
+                    JOptionPane.showInputDialog(null, "A equação possui uma raiz única: \n x= " + x1);
+            
+                }
+                else {
+                    JOptionPane.showInputDialog(null, "A euqação não possui raizes reais.");
+                }    
             }
         }
     }
