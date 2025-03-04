@@ -26,24 +26,28 @@ public class Ex23_OrdemCrescente2 {
                 o3 = v2;
                 o4 = v3;
             }
-            else if (v4 <= v2) {
+            else {
+                if (v4 <= v2) {
                     o1 = v1;
                     o2 = v4;
                     o3 = v2;
                     o4 = v3;
-            }
-                else if  (v4 <= v3) {
+                }
+                else {
+                    if  (v4 <= v3) {
                         o1 = v1;
                         o2 = v2;
                         o3 = v4;
                         o4 = v3;
-                }
-                    else {
-                            o1 = v1;
-                            o2 = v2;
-                            o3 = v3;
-                            o4 = v4;
                     }
+                    else {
+                        o1 = v1;
+                        o2 = v2;
+                        o3 = v3;
+                        o4 = v4;
+                    }
+                }
+            }        
         }
         JOptionPane.showInputDialog(null,("Os números na oredem crescente: \n" + o1 + ", " + o2 + ", " + o3 + ", " + o4));
     }
