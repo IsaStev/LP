@@ -13,19 +13,19 @@ public class Ex18_DiferencaDoisValores {
         
         if ( n1 == n2){
             JOptionPane.showMessageDialog(null, "Os valores são iguais.");
+            return;
         }
+        else {
+            if (n1 > n2) {
+                maior = n1;
+                menor = n2;
+            }          
             else {
-                    if (n1 > n2) {
-                        maior = n1;
-                        menor = n2;
-                    } 
-                    
-                        else {
-                            maior = n2;
-                            menor = n1;
-                        }
-                            diferenca = maior - menor;
-                            JOptionPane.showMessageDialog(null, "A diferença entre os números é: " + diferenca);
-            }
+                maior = n2;
+                menor = n1;
+            }       
+                diferenca = (maior - menor);
+                JOptionPane.showMessageDialog(null, "A diferença entre os números é: " + diferenca);  
+        }    
     }  
 }
